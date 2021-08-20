@@ -1,0 +1,47 @@
+{
+  "name": "feed-recorder",
+  "version": "1.0.0",
+  "description": "FeedRecorder",
+  "main": "index.js",
+  "engines": {
+    "node": "12.9"
+  },
+  "scripts": {
+    "build": "npm run server:build && npm run client:build",
+    "start": "NODE_ENV=production NODE_CONFIG_DIR=./server/src/config node ./server/build/src/index.js",
+    "server:build": "cd ./server && npm install && npm run server:build",
+    "server:start": "cd ./server && NODE_ENV=development NODE_CONFIG_DIR=./src/config npm run server:start",
+    "client:start": "cd ./client && npm start",
+    "client:build": "cd ./client && npm install && npm run build",
+    "start:dev": "npm run server:start & npm run client:start",
+    "migrate:dev": "cd ./server && npm run migrate:dev",
+    "migrate:prod": "cd ./server && npm run migrate:prod"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.925.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "fs-utils": "^0.7.0",
+    "mongoose": "^5.12.9"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/config": "0.0.38",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/faker": "^5.5.5",
+    "@types/fs-extra": "^9.0.11",
+    "@types/mongoose": "^5.10.5",
+    "@types/node": "^15.0.3",
+    "cors": "^2.8.5",
+    "migrate-mongo": "^8.2.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,13 @@
+{
+    "CONNECTIONS": {
+      "MONGODB": {
+        "URL": "mongodb+srv://development:BrainLeo1986@cluster0.lvfic.mongodb.net",
+        "DB_NAME": "admin-db"
+      },
+        "S3": {
+            "accessKeyId": "AKIA2L2D3KFKZGZ7STFJ",
+            "secretAccessKey": "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",
+            "bucket": "feed-recorder-dev"
+        }
+    }
+}

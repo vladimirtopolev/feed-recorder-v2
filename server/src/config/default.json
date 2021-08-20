@@ -1,0 +1,13 @@
+{
+    "CONNECTIONS": {
+        "MONGODB": {
+            "URL": "mongodb://localhost:27017",
+            "DB_NAME": "bt-admin"
+        },
+        "S3": {
+            "accessKeyId": "AKIA2L2D3KFKZGZ7STFJ",
+            "secretAccessKey": "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",
+            "bucket": "feed-recorder-dev"
+        }
+    }
+}
