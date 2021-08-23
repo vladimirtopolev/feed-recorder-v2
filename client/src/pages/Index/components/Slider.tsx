@@ -2,6 +2,7 @@ import {FC} from 'react';
 import {useStyles} from './Slider.styles';
 import {Container, Grid, Typography} from '@material-ui/core';
 import {SignupButton} from '../../../components/Auth0Components/SignupButton/SignupButton';
+import slideImage from './image-site.jpg';
 
 export const Slider: FC = () => {
     const classes = useStyles();
@@ -44,7 +45,7 @@ export const Slider: FC = () => {
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={7} className={classes.imageContainer}>
-                    <img src="image-site.jpg" className={classes.image}/>
+                    <img src={slideImage} className={classes.image}/>
                 </Grid>
             </Grid>
         </Container>

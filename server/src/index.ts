@@ -19,12 +19,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // API ROUTES
+/*
 app.use('/api/data', dataRouter);
 app.use('/api/patterns', patternRouter);
 app.use('/api/records', recordRecordRouter);
 app.use('/api/records', recordSimulatorRouter);
 app.use('/api/records', recordRouter);
-
+ */
 
 
 app.use('/static', express.static(path.resolve(__dirname, '../static/static')));
