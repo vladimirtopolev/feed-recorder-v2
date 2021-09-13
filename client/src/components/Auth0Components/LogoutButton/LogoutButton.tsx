@@ -7,7 +7,7 @@ export const LogoutButton: FC<ButtonProps> = ({children, ...buttonProps}) => {
     return (
         <Button
             {...buttonProps}
-            onClick={() => logout}
+            onClick={() => logout()}
         >
             {children || (
                 <SvgIcon>

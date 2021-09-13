@@ -1,11 +1,8 @@
 import {FC} from 'react';
-import {AppBar, Box, Container, List, ListItem, SvgIcon, Toolbar} from '@material-ui/core';
+import {AppBar, Box, Container, List, ListItem, Toolbar} from '@material-ui/core';
 import {AllInclusive} from '@material-ui/icons';
 import {NavLink} from 'react-router-dom';
 import {useStyles} from './Header.styles';
-import {LoginButton} from '../../../components/Auth0Components/LoginButton/LoginButton';
-import {LogoutButton} from '../../../components/Auth0Components/LogoutButton/LogoutButton';
-import {SignupButton} from '../../../components/Auth0Components/SignupButton/SignupButton';
 import {AuthorizationButtons} from './AuthorizationButtons';
 
 export const Header:FC = () => {
@@ -18,11 +15,8 @@ export const Header:FC = () => {
                 <Toolbar className={classes.toolbar}>
                     <Box className={classes.links}>
                         <List component="nav" aria-label="header main navigation" disablePadding className={classes.linksContainer}>
-                            <ListItem button component={NavLink}  to={'/patterns'} className={classes.link}>
-                                Patterns
-                            </ListItem>
-                            <ListItem button component={NavLink}  to={'/records'} className={classes.link}>
-                                Records
+                            <ListItem button component={NavLink}  to={'/projects'} className={classes.link}>
+                                Projects
                             </ListItem>
                         </List>
                     </Box>

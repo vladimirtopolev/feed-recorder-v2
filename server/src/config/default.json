@@ -9,5 +9,11 @@
             "secretAccessKey": "ckd9z9XQGSpY4jnY4LWhsoBm4lg+aZjuSQ2xiOR7",
             "bucket": "feed-recorder-dev"
         }
+    },
+    "AUTHORIZATION": {
+        "AUTH0": {
+            "DOMAIN": "feed-recorder.eu.auth0.com",
+            "AUDIENCE": "https://feed-recorder.com"
+        }
     }
 }
