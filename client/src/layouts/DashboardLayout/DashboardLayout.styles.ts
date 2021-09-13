@@ -1,4 +1,4 @@
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+import {createStyles, makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) =>
     createStyles({
@@ -7,14 +7,13 @@ export const useStyles = makeStyles((theme) =>
             display: 'flex',
             flexDirection: 'column'
         },
+        header: {},
         content: {
+            position: 'relative',
             flexGrow: 1,
-            display: 'flex',
-            flexDirection: 'column',
-            background: '#f5f5f5',
-            position: 'relative'
         },
         loaderContainer: {
+            top: 0,
             width: '100%',
             height: '100%',
             position: 'absolute',
@@ -23,6 +22,7 @@ export const useStyles = makeStyles((theme) =>
             alignItems: 'center',
             backgroundColor: 'rgba(255, 255, 255, 0.6)',
         }
+
     })
 );
 

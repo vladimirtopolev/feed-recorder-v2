@@ -51,7 +51,6 @@ recordRouter.put('/:recordId', async (req, res) => {
     const modifier = ['name', 'simulationStep'].reduce((memo, field) => {
         return req.body[field] ? {...memo, [field]: req.body[field]} : memo;
     }, {});
-    console.log(modifier);
 
     const newRecord = await RecordModel.findByIdAndUpdate(
         {_id: recordId},

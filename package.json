@@ -18,14 +18,20 @@
     "migrate:prod": "cd ./server && npm run migrate:prod"
   },
   "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "aws-sdk": "^2.925.0",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "config": "^3.3.6",
     "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
     "fs-extra": "^10.0.0",
     "fs-utils": "^0.7.0",
-    "mongoose": "^5.12.9"
+    "http-status": "^1.5.0",
+    "jwks-rsa": "^2.0.4",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.9",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
